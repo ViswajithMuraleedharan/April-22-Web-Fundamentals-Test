@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            margin:20% auto;
+            padding:0;
+        }
+        #out{
+            display: flex;
+            flex-direction: row;
+            border:3px solid red;
+            background-color: red;
+            justify-content: center;
+            height: 90px;
+            align-items: center;
+            margin: 0;
+
+        }
+        p{
+            margin:0;
+            padding:0;
+        }
+        #c1, #c2, #c3{
+        border:3px solid green;
+        background-color: green;
+        padding: 0px;
+        display: flex;
+        width: 120px;
+        height: 80px;
+        margin-right: 20px;
+        
+    }
+    #c1{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+        #c2{
+        display: flex;
+        align-items: center;
+    }
+        #c3{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    </style>
+</head>
+<body>
+   <div id="out">
+    <div id="c1">
+        <p>Child 1</p>
+    </div>
+    <div id="c2">
+        <p>Child 2</p>
+    </div>
+    <div id="c3">
+        <p>Child 3</p>
+    </div>
+   </div>
+</body>
+</html>
