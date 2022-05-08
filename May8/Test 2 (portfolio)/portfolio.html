@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mulish:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/7a91eaa2d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul type="none">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container banner">
+            <div class="image">
+                <img src="./laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.webp" alt="banner-img"/>
+            </div>
+            <div class="content">
+                <p class="title">Hey! I'm <span>Viswajith Muraleedharan</span></p>
+                <p class="desc">I am a software developer</p>
+                <button class="btn" href="#about">About me</button>
+            </div>
+        </div>
+        <div class="container about">
+            <div class="content">
+                <p class="title">About Me</p>
+                <p class="desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero cumque laborum aperiam natus. Iste accusamus fugiat distinctio voluptatibus magnam ea porro vero, obcaecati, illum, ducimus deleniti reprehenderit dolores necessitatibus! Qui ex corporis officiis iste laboriosam voluptatem eveniet, impedit expedita inventore illo eligendi perferendis doloremque, dignissimos aspernatur. Perferendis ut nobis nulla inventore debitis ipsa commodi reiciendis veritatis, repellendus deserunt itaque ab expedita consequatur sunt. Tempore cumque temporibus ratione voluptate amet id pariatur, quae voluptatem obcaecati nostrum culpa quia et! Veritatis, soluta error, aliquid dignissimos ut repellendus maxime, sint ullam quaerat recusandae magnam vel ea rerum? Tenetur, numquam maiores.</p>
+            </div>
+            <div class="image">
+                <img src="./social-tree-concept-illustration_114360-4898.webp" alt="banner-img"/>
+            </div>
+        </div>
+        <div class="container skills">
+            <div class="content">
+                <p class="title">Skills</p>
+                <div class="grid_container">
+                    <div class="grid-item"><p><i class="fa-brands fa-html5"></i>Html</p></div>
+                    <div class="grid-item"><p><i class="fa-brands fa-css3"></i>Css</p></div>
+                    <div class="grid-item"><p><i class="fa-brands fa-bootstrap"></i>Bootstrap</p></div>
+                    <div class="grid-item"><p><i class="fa-brands fa-js"></i>JavaScript</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="container contact" id="contact">
+            <div class="image">
+              <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?size=338&ext=jpg&uid=R70536862&ga=GA1.2.1983136056.1651853403" alt="contact-img" />
+            </div>
+            <div class="content">
+              <p class="title">Get in touch with me here!</p>
+              <form action="/action_page.php" class="form">
+                <div class="field">
+                  <label for="email" class="title">Your email id:</label><br />
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    value="email@gmail.com"
+                    class="input"
+                  />
+                </div>
+                <div class="field">
+                  <label for="lname" class="title">Anything to say to me:</label><br />
+                  <input
+                    type="text"
+                    id="msg"
+                    name="msg"
+                    value="Hi! there"
+                    class="input"
+                  />
+                </div>
+    
+                <input type="submit" value="Submit" class="btn" />
+              </form>
+            </div>
+          </div>
+          <div class="footer">
+              <div class="title">
+                  <h2>Viswajith Muraleedharan</h2>
+              </div>
+              <div class="icons">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <p> @ <span id="year"></span>
+                    <script>
+                        var d = new Date();
+                        var n = d.getFullYear();
+                        document.getElementById("year").innerHTML = n;
+                    </script>
+                    copyright all right reserved
+                </p>
+              </div>
+          </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* navbar start */
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+}
+.navbar ul{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+}
+li {
+    float:left;
+}
+li a{
+    display: block;
+    padding: 25px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+}
+/* navbar end */
+/* banner start */
+.container {
+    width: 100%;
+    margin:2% 0%;
+    padding: 6% 0;
+}
+.banner {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(2,50%);
+    background-color: rgb(2, 6, 84);
+}
+.banner .image img {
+    width:100%;
+}
+.banner .content {
+    font-family: "Lato", sans-serif;
+    padding:6% 0%;
+    color: aliceblue;
+}
+.banner .content .title {
+    font-size: 50px;
+}
+.banner .content .title span {
+    font-weight: 800;
+}
+.banner .content .desc {
+    font-size: 26px;
+}
+.banner .content .btn {
+    background-color: #f4b41a;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 2% 5%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+}
+/* banner end */
+/* about me start */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.about .image img {
+    width: 80%;
+}
+.about .content {
+    font-family: "Lato", sans-serif;
+    padding: 8% 13%;
+    width:80%;
+    
+}
+.about .content .title {
+    font-size: 28px;
+    font-weight: 700;
+}
+.about .content .desc {
+    font-size: 19px;
+}
+/* about me end */
+/* skill bar starts */
+.skills .content {
+    font-family: "Lato", sans-serif;
+    padding:2% 10%;
+    background-color: #dcbfb7;
+    text-align: center;
+}
+.skills .content .title {
+    font-size: 28px;
+    font-weight: 800;
+}
+.skills .grid_container {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 28px;
+    padding-right: 75px;
+}
+.skills .grid_container .grid-item {
+    border: 1px solid #ddd;
+    background: #fff;
+    border-bottom: 5px solid #6d8363;
+    padding: 7% 6%;
+    border-radius: 8px;
+    text-align: center;
+}
+.skills .grid_container .grid-item .fa-brands {
+    margin-right: 8%;
+    font-size: 19px;
+    color: #6b8363;
+}
+/* skill bar ends */
+/* contact starts */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.contact .image img{
+    width: 80%;
+}
+.contact .content{
+    font-family: "Lato", sans-serif;
+    padding: 10% 13%;
+}
+.contact .content .title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0%;
+  }
+  .contact .content .form {
+    padding: 2% 0%;
+  }
+  .contact .content .form .field {
+    padding: 2% 0%;
+  }
+  .contact .content .form .title {
+    font-size: 16px;
+  }
+  .contact .content .form .input {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    width: 50%;
+    padding: 2% 2%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 2%;
+  }
+  .contact .content .btn {
+    background-color: rgb(2, 6, 84);
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 2% 10%;
+    margin-top: 3%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  /* contact bar ends */
+  /* footer starts */
+  .footer {
+    width: 100%;
+    background-color: rgb(2, 6, 84);
+    font-size: 50px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    color: #fff;
+    padding: 2% 0;
+  }
+  .footer .title h2 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .footer .icons .icon{
+    color: rgb(2, 6, 84);
+  }
+  .footer .icons .icon .fa-brands {
+    text-decoration: none !important;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 15px;
+    margin-right: 30px;
+  }
+  .footer .icons .fa-brands a{
+    font-weight: 600;
+    margin: 20px;
+  }
+
+  /* footer end */
