@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cicle inside square</title>
+    <style>
+        body{
+            background-color:  #E3B448;
+        }
+       .container{
+           margin-left: 37.5%;
+           margin-top: 12.5%;
+       }
+        #square{
+            border: 1px solid #3A6B35;
+            background-color: #3A6B35;
+            height: 350px;
+            width:350px;
+            position: relative;
+            z-index: 2;
+            top:50%;
+            bottom: 50%;
+        }
+        #circle{
+            border:1px solid #CBD18F;
+            background-color: #CBD18F;
+            border-radius: 50%;
+            height: 350px;
+            width:350px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="square">
+            <div id="circle"></div>
+        </div>
+       </div>
+</body>
+</html>
