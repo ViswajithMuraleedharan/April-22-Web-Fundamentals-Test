@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Click This Button <button onclick="findingTheNthPrimeNumber()">Click me</button></h1>
+    <p>The needed prime number is <span id="output"></span></p>
+    <!-- <p id="output"></p> -->
+
+    
+    <script>
+        function findingTheNthPrimeNumber()
+        {
+            let num = prompt("Enter Any number : ");
+
+            let prime = 0;
+            let text = "";
+
+            if(num != null)
+            {
+                let n = num;
+                let count = 0;
+                let index = 0;
+                for(let i =2; i<num;i++)
+                {
+                    num++;
+
+                    let j =0;
+                    for(j =2; j<=i;j++)
+                    {
+                        if(i%j == 0)
+                            break;
+                    }
+                    if(j == i)
+                    {
+                        count = j;
+                        index++;
+                    }
+                    if(index == n)
+                        break;
+                }
+                document.getElementById("output").innerHTML = count;
+            }
+        }
+
+
+    </script>
+</body>
+</html>
