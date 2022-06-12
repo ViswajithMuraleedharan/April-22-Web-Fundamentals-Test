@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findingNthLargest(arr,largest) {
+            let a=0;
+            let b=0;
+            let c=0;
+            let l=arr.length;
+            let temp=0;
+            let flag=false;
+            let result=false;
+            while (a<l) {
+                b=a+1;
+                if(b<1){
+                    for (c=b;c<l;c++) {
+                        if(arr[c]<arr[a]){
+                            temp=arr[c];
+                            arr[c]=arr[a];
+                            arr[a]=temp;
+                            flag=true;
+                        }
+                    }
+                }
+                if(flag){
+                    flag=false;
+                }
+                else{
+                    a++;
+                    if(a==largest){
+                        result=true;
+                    }
+                }
+                if(result){
+                    break;
+                }
+            }
+            return(arr[(largest-1)]);
+        }   
+        console.log(findingNthLargest([ 49, 56, 17, 80, 98, 90, 99, 552], 4));
+    </script>
+</body>
+</html>
