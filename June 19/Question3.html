@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ol id="olist">
+        </ol>
+    </div>
+</body>
+<script>
+    let  city = ['Delhi', 'Mumbai', 'Jaipur','Kolkata','Indore' ];
+    let list=document.getElementById("olist");
+    city.forEach((item)=>{
+        let li=document.createElement("li");
+        li.innerText=item;
+        list.appendChild(li)
+    })
+</script>
+</html>
